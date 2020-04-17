@@ -1,6 +1,6 @@
 <core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
 	xmlns:fb="sap.ui.comp.filterbar" controller="com.sap.ae-mockup.controller.Detail">
-	<Dialog title="Tedarikçi Seçimi" width="50%">
+	<Dialog title="Tedarikçi Seçimi" contentWidth="60em">
 		<content>
 			<fb:FilterBar search="handleItemNumberSearch" showRestoreButton="false" showFilterConfiguration="false" useToolbar="false"
 				filterBarExpanded="true" deltaVariantMode="false">
