@@ -1,0 +1,46 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core" xmlns:f="sap.ui.layout.form"
+	xmlns:fb="sap.ui.comp.filterbar" controller="com.sap.ae-mockup.controller.Detail">
+	<Dialog title="Tedarikçi Seçimi">
+		<content>
+			<fb:FilterBar search="handleItemNumberSearch" showRestoreButton="false" showFilterConfiguration="false" useToolbar="false"
+				filterBarExpanded="true" deltaVariantMode="false">
+				<fb:filterItems>
+					<fb:FilterItem name="fiItemNumber" label="Tedarikçi No">
+						<fb:control>
+							<Input value=""/>
+						</fb:control>
+					</fb:FilterItem>
+					<fb:FilterItem name="fiItemDefinition" label="Tedarikçi">
+						<fb:control>
+							<Input value=""/>
+						</fb:control>
+					</fb:FilterItem>
+				</fb:filterItems>
+			</fb:FilterBar>
+			<Table items="{ path: 'mock>/suppliers', parameters: {operationMode: 'Server'} }" mode="SingleSelectMaster"
+				backgroundDesign="Solid" selectionChange="handleCloseSupplier" rememberSelections="false">
+				<columns>
+					<Column minScreenWidth="Phone" demandPopin="true">
+						<header>
+							<Text text="Tedarikçi No"/>
+						</header>
+					</Column>
+					<Column minScreenWidth="Phone" demandPopin="true">
+						<header>
+							<Text text="Tedarikçi"/>
+						</header>
+					</Column>
+				</columns>
+				<ColumnListItem>
+					<cells>
+						<Text text="{mock>no}"/>
+						<Text text="{mock>name}"/>
+					</cells>
+				</ColumnListItem>
+			</Table>
+		</content>
+		<endButton>
+			<Button icon="sap-icon://decline" press="handleCloseSupplier" type="Reject" tooltip="Kapat"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

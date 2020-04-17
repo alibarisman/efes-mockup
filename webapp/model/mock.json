@@ -1,0 +1,187 @@
+{
+	"items": [{
+		"Aktivite": "EFES MALT-BRAND IMAGE BUILDING ACTIVITY",
+		"SCNo": "1000227005",
+		"MasrafYeri": "310156 İst.Paz.Yön.EfesMalt",
+		"AktiviteKodu": "106080",
+		"TalepSayısı": "3",
+		"Toplam": "6.500,000 EUR",
+		"item": [{
+			"Talep": "324",
+			"Durum": "Açık",
+			"Tedarikci": "SRM Bayi 1",
+			"Tarih": "22.05.2019",
+			"Tutar": "2.000,00 EUR"
+		}, {
+			"Talep": "325",
+			"Durum": "Onaylı",
+			"Tedarikci": "SRM Bayi 4",
+			"Tarih": "22.05.2019",
+			"Tutar": "3.000,00 EUR"
+		}, {
+			"Talep": "326",
+			"Durum": "Kapalı",
+			"Tedarikci": "SRM Bayi 9",
+			"Tarih": "22.05.2019",
+			"Tutar": "1.500,00 EUR"
+		}]
+	}, {
+		"Aktivite": "EFES MALT - TACTICAL PLAY",
+		"SCNo": "Ürün Gönderimi - Blok Bomonti",
+		"MasrafYeri": "310156 İst.Paz.Yön.EfesMalt",
+		"AktiviteKodu": "106081",
+		"TalepSayısı": "5",
+		"Toplam": "23.050,000 EUR",
+		"item": [{
+			"Talep": "327",
+			"Durum": "Açık",
+			"Tedarikci": "SRM Bayi 1",
+			"Tarih": "15.12.2019",
+			"Tutar": "9.000,00 EUR"
+		}, {
+			"Talep": "328",
+			"Durum": "Açık",
+			"Tedarikci": "SRM Bayi 13",
+			"Tarih": "15.12.2019",
+			"Tutar": "5.250,00 EUR"
+		}, {
+			"Talep": "329",
+			"Durum": "Onaylı",
+			"Tedarikci": "SRM Bayi 2",
+			"Tarih": "15.12.2019",
+			"Tutar": "1.800,00 EUR"
+		}, {
+			"Talep": "330",
+			"Durum": "Kapalı",
+			"Tedarikci": "SRM Bayi 9",
+			"Tarih": "15.12.2019",
+			"Tutar": "4.000,00 EUR"
+		}, {
+			"Talep": "331",
+			"Durum": "Kapalı",
+			"Tedarikci": "SRM Bayi 7",
+			"Tarih": "15.12.2019",
+			"Tutar": "3.000,00 EUR"
+		}]
+	}, {
+		"Aktivite": "BUD PR",
+		"SCNo": "100200835",
+		"MasrafYeri": "310156 İst.Paz.Yön.EfesMalt",
+		"AktiviteKodu": "120148",
+		"TalepSayısı": "4",
+		"Toplam": "12.000,00 EUR",
+		"item": [{
+			"Talep": "332",
+			"Durum": "Kapalı",
+			"Tedarikci": "SRM Bayi 14",
+			"Tarih": "20.01.2020",
+			"Tutar": "3.000,00 EUR"
+		}, {
+			"Talep": "333",
+			"Durum": "Kapalı",
+			"Tedarikci": "SRM Bayi 8",
+			"Tarih": "20.01.2020",
+			"Tutar": "3.000,00 EUR"
+		}, {
+			"Talep": "334",
+			"Durum": "Açık",
+			"Tedarikci": "SRM Bayi 10",
+			"Tarih": "20.01.2020",
+			"Tutar": "3.000,00 EUR"
+		}, {
+			"Talep": "335",
+			"Durum": "Onaylı",
+			"Tedarikci": "SRM Bayi 11",
+			"Tarih": "20.01.2020",
+			"Tutar": "3.000,00 EUR"
+		}]
+	}],
+	"suppliers": [{
+		"name": "SRM Bayi 1",
+		"no": "1000000011"
+	}, {
+		"name": "SRM Bayi 2",
+		"no": "1000000013"
+	}, {
+		"name": "SRM Bayi 3",
+		"no": "1000000017"
+	}, {
+		"name": "SRM Bayi 4",
+		"no": "1000000021"
+	}],
+	"chart": [{
+		"Department": "R & D",
+		"EmployeeCount": "20"
+	}, {
+		"Department": "Syngenta",
+		"EmployeeCount": "30"
+	}, {
+		"Department": "Volvo",
+		"EmployeeCount": "35"
+	}, {
+		"Department": "NIKE",
+		"EmployeeCount": "60"
+	}, {
+		"Department": "ADIDAS",
+		"EmployeeCount": "70"
+	}],
+	"bar": [{
+		"Year": "2012",
+		"Milk": "20",
+		"Sugar": "5",
+		"Tea": "5"
+	}, {
+		"Year": "2013",
+		"Milk": "30",
+		"Sugar": "10",
+		"Tea": "10"
+	}, {
+		"Year": "2014",
+		"Milk": "35",
+		"Sugar": "15",
+		"Tea": "15"
+	}, {
+		"Year": "2015",
+		"Milk": "60",
+		"Sugar": "20",
+		"Tea": "20"
+	}, {
+		"Year": "2016",
+		"Milk": "70",
+		"Sugar": "40",
+		"Tea": "40"
+	}],
+	"stack": [{
+		"Quarter": "Q1",
+		"MilkCurrYear": "20",
+		"MilkPrevYear": "30",
+		"SugarCurrYear": "40",
+		"SugarPrevYear": "35",
+		"TeaCurrYear": "48",
+		"TeaPrevYear": "20"
+	}, {
+		"Quarter": "Q2",
+		"MilkCurrYear": "30",
+		"MilkPrevYear": "20",
+		"SugarCurrYear": "10",
+		"SugarPrevYear": "20",
+		"TeaCurrYear": "10",
+		"TeaPrevYear": "5"
+	}, {
+		"Quarter": "Q3",
+		"MilkCurrYear": "35",
+		"MilkPrevYear": "20",
+		"SugarCurrYear": "15",
+		"SugarPrevYear": "20",
+		"TeaCurrYear": "15",
+		"TeaPrevYear": "5"
+	}, {
+		"Quarter": "Q4",
+		"MilkCurrYear": "60",
+		"MilkPrevYear": "20",
+		"SugarCurrYear": "20",
+		"SugarPrevYear": "20",
+		"TeaCurrYear": "20",
+		"TeaPrevYear": "5"
+	}]
+}

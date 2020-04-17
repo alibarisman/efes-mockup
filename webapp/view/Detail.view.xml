@@ -1,0 +1,98 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.sap.ae-mockup.controller.Detail"
+	xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Aktivite Bilgileri" showNavButton="true" navButtonPress="onBack">
+				<content>
+					<ObjectHeader 
+						id="oh"
+						title="{scDetails>/Aktivite}" 
+						backgroundDesign="Translucent" 
+						responsive="true"
+						number="{ parts:[{path:'catalogDetails>/Preis'},{path:'catalogDetails>/Waers'}], type: 'sap.ui.model.type.Currency', formatOptions: {showMeasure: false} }"
+						numberUnit="EUR">
+						<attributes>
+							<ObjectAttribute title="SC No" text="{scDetails>/SCNo}"/>
+							<ObjectAttribute title="Masraf Yeri" text="{scDetails>/MasrafYeri}"/>
+							<ObjectAttribute class="hide" title="." text="."/>
+							<ObjectAttribute title="Aktivite Kodu" text="{scDetails>/AktiviteKodu}"/>
+							<ObjectAttribute title="Sipariş Sayısı" text="{scDetails>/TalepSayısı}"/>
+							<ObjectAttribute class="hide" title="." text="."/>
+							<ObjectAttribute title="Kullanılan Tutar" text="{scDetails>/Toplam}"/>
+							<ObjectAttribute title="Kalan Tutar" text="{scDetails>/Toplam}"/>
+							<ObjectAttribute title="Toplam Tutar" text="{scDetails>/Toplam}"/>
+						</attributes>
+					</ObjectHeader>
+					<IconTabBar class="sapUiResponsiveContentPadding">
+						<items>
+							<IconTabFilter id="detailsTab" icon="sap-icon://hint">
+								<VBox>
+									<!--<f:SimpleForm id="SimpleFormProcessorInfo" editable="false" layout="ResponsiveGridLayout" title="Detaylar" labelSpanL="3"-->
+									<!--	labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="2" columnsM="2">-->
+									<!--	<f:content>-->
+									<!--		<Label text="Masraf Yeri"/>-->
+									<!--		<Text text="{scDetails>/MasrafYeri}" />-->
+									<!--		<Label text="Aktivite Kodu"/>-->
+									<!--		<Text text="{scDetails>/AktiviteKodu}"/>-->
+									<!--		<Label text="Sipariş Sayısı"/>-->
+									<!--		<Text text="{scDetails>/TalepSayısı}"/>-->
+									<!--	</f:content>-->
+									<!--</f:SimpleForm>-->
+									<Table id="list" inset="false" items="{path: 'scDetails>/item'}" mode="SingleSelectLeft">
+										<headerToolbar>
+											<Toolbar>
+												<Title text="Ürün Gönderimleri" level="H2"/>
+												<ToolbarSpacer/>
+												<Button id="BtnAddRecord" type="Transparent" text="Yeni Sipariş Ekle" press="onAddRecord" icon="sap-icon://add"/>
+											</Toolbar>
+										</headerToolbar>
+										<columns>
+											<Column>
+												<header>
+													<Label text="Sipariş" tooltip="Talep"/>
+												</header>
+											</Column>
+											<Column minScreenWidth="Tablet" demandPopin="true">
+												<header>
+													<Label text="Durum" tooltip="Durum"/>
+												</header>
+											</Column>
+											<Column minScreenWidth="Tablet" demandPopin="true">
+												<header>
+													<Label text="Tedarikçi" tooltip="Tedarikçi"/>
+												</header>
+											</Column>
+											<Column minScreenWidth="Tablet" demandPopin="true">
+												<header>
+													<Label text="Tutar" tooltip="Tutar"/>
+												</header>
+											</Column>
+										</columns>
+										<items>
+											<ColumnListItem type="Inactive">
+												<cells>
+													<ObjectIdentifier title="{scDetails>Talep}" text="{scDetails>Tarih}"/>
+													<Text text="{scDetails>Durum}"/>
+													<Text text="{scDetails>Tedarikci}"/>
+													<Text text="{scDetails>Tutar}"/>
+												</cells>
+											</ColumnListItem>
+										</items>
+									</Table>
+								</VBox>
+							</IconTabFilter>
+						</items>
+					</IconTabBar>
+				</content>
+				<footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button id="btnApprove" type="Accept" text="Onayla" icon="sap-icon://accept" press="onDecision"/>
+						<Button id="btnReject" type="Reject" text="Reddet" icon="sap-icon://decline" press="onDecision"/>
+						<!--<Button id="btnSave" type="Emphasized" text="Kaydet" icon="sap-icon://save" press="onSave"/>-->
+					</OverflowToolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

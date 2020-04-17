@@ -1,0 +1,28 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="com.sap.ae-mockup.controller.List" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="Aktivite Listesi">
+					<content>
+						<Title level="H1" text="" />
+						<Toolbar id="searchBar">
+							<SearchField search="handleSearch" placeholder="Ara" showRefreshButton="true" width="50%"></SearchField>
+							<ToolbarSpacer/>
+							<Button icon="sap-icon://filter" type="Transparent"/>
+							<Button icon="sap-icon://group-2" type="Transparent"/>
+						</Toolbar>
+						<List items="{mock>/items}" headerText="Aktiviteler (3)">
+							<ObjectListItem title="{mock>Aktivite}" type="Navigation" press="onListItemPress" number="{mock>AktiviteKodu}">
+								<firstStatus>
+									<ObjectStatus text="Sipariş Sayısı: {mock>TalepSayısı}" state="Warning"/>
+								</firstStatus>
+								<ObjectAttribute text="{mock>SCNo}"/>
+								<!--<ObjectAttribute text="{mock>MasrafYeri}"/>-->
+							</ObjectListItem>
+						</List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
